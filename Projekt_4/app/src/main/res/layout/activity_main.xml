@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.projekt_4.MainActivity"
+    android:background="@android:color/holo_blue_light">
+
+    <TextView
+        android:text="Witaj w Aplikacji 4!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tvTytul"
+        android:textColor="@android:color/background_dark"
+        android:background="@android:color/background_light"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="Uwaga bede odliczal!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvZmiana"
+        android:background="@android:color/holo_blue_light"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <Button
+        android:text="START"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bZmianaTv"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:onClick="onStartThreadClick"
+        android:background="@color/colorAccent" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:text="Rozpocznij AsyncTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_dark"
+        android:id="@+id/bAsyncTask"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:onClick="MyAsyncTask"
+        android:enabled="true" />
+
+</LinearLayout>
